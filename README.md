@@ -3,13 +3,16 @@
 ## Team Members
 	
 Ben Vu
-Email: b_vu6@u.pacific.edu 
+
+	Email: b_vu6@u.pacific.edu 
 
 Brian Che  
-Email: b_che@u.pacific.edu
+
+	Email: b_che@u.pacific.edu
 
 Jason Leong
-Email: j_leong4@u.pacific.edu
+
+	Email: j_leong4@u.pacific.edu
 
 
 ## Project Description 
