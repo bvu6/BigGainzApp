@@ -7,17 +7,16 @@
 
 import SwiftUI
 
+
 struct ContentView: View {
     var body: some View {
         NavigationView {
             VStack {
-                
                 Text("Big Gainz")
                     .font((.system(size: 70, weight: .semibold, design: .serif)))
                     .foregroundColor(Color.orange)
                     .position(x: 200, y: 200)
             
-                
                 NavigationLink(destination: HomePageView()) {
                     Text("Let's Get Started!")
                     .frame(minWidth: 0, maxWidth: 250)
@@ -31,16 +30,6 @@ struct ContentView: View {
             }
             .background(Color.gray)
         }
-//        Text("Big Gainz")
-//            .font((.system(size: 50, weight: .semibold, design: .serif)))
-//            .position(x: 200, y:200)
-//
-//        NavigationLink(destination: HomePageView()) {
-//            Button(action: {
-//                print("")
-//            })
-//                Text("Start")
-//        }
     }
 }
         
@@ -50,3 +39,4 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
