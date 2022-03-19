@@ -10,6 +10,16 @@ import SwiftUI
 struct HomePageView: View {
     var body: some View {
         Text("Home Page")
+        NavigationLink(destination: MainLog()) {
+            Text("Login")
+            .frame(minWidth: 0, maxWidth: 250)
+            .padding()
+            .foregroundColor(.white)
+            .background(LinearGradient(gradient: Gradient(colors: [Color.orange, Color.black]), startPoint: .leading, endPoint: .trailing))
+            .cornerRadius(30)
+            .font(.title)
+            .position(x: 200, y: 50)
+        }
     }
 }
 
