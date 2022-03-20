@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		028B10FD27CF721C0098FFB1 /* Info.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 028B10FC27CF721C0098FFB1 /* Info.storyboard */; };
+		02F35D6627E70085008DCD95 /* LoginInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F35D6527E70085008DCD95 /* LoginInfoView.swift */; };
 		4A73887E27CF5F8C00A4353C /* HomePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A73887D27CF5F8C00A4353C /* HomePageView.swift */; };
 		4AB49F4227CF4E3D00FA2A90 /* Big_GainzApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB49F4127CF4E3D00FA2A90 /* Big_GainzApp.swift */; };
 		4AB49F4427CF4E3D00FA2A90 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB49F4327CF4E3D00FA2A90 /* ContentView.swift */; };
@@ -37,7 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		028B10FC27CF721C0098FFB1 /* Info.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Info.storyboard; sourceTree = "<group>"; };
+		02F35D6527E70085008DCD95 /* LoginInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInfoView.swift; sourceTree = "<group>"; };
 		4A73887D27CF5F8C00A4353C /* HomePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageView.swift; sourceTree = "<group>"; };
 		4AB49F3E27CF4E3D00FA2A90 /* Big Gainz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Big Gainz.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AB49F4127CF4E3D00FA2A90 /* Big_GainzApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Big_GainzApp.swift; sourceTree = "<group>"; };
@@ -105,8 +105,8 @@
 				4AB49F4527CF4E4100FA2A90 /* Assets.xcassets */,
 				4AB49F4727CF4E4100FA2A90 /* Preview Content */,
 				4A73887D27CF5F8C00A4353C /* HomePageView.swift */,
-				028B10FC27CF721C0098FFB1 /* Info.storyboard */,
 				B55DF7F627E671730000BC68 /* MainLogView.swift */,
+				02F35D6527E70085008DCD95 /* LoginInfoView.swift */,
 			);
 			path = "Big Gainz";
 			sourceTree = "<group>";
@@ -240,7 +240,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				028B10FD27CF721C0098FFB1 /* Info.storyboard in Resources */,
 				4AB49F4927CF4E4100FA2A90 /* Preview Assets.xcassets in Resources */,
 				4AB49F4627CF4E4100FA2A90 /* Assets.xcassets in Resources */,
 			);
@@ -268,6 +267,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4AB49F4427CF4E3D00FA2A90 /* ContentView.swift in Sources */,
+				02F35D6627E70085008DCD95 /* LoginInfoView.swift in Sources */,
 				4A73887E27CF5F8C00A4353C /* HomePageView.swift in Sources */,
 				4AB49F4227CF4E3D00FA2A90 /* Big_GainzApp.swift in Sources */,
 				B55DF7F727E671730000BC68 /* MainLogView.swift in Sources */,
