@@ -30,7 +30,6 @@ struct ContentView: View {
             }
             .background(Color.gray)
         }
-        //InfoController()
     }
 }
         
@@ -41,17 +40,3 @@ struct ContentView_Previews: PreviewProvider {
     }
 }
 
-struct InfoController : UIViewControllerRepresentable {
-    
-    func makeUIViewController(context: UIViewControllerRepresentableContext<InfoController>) -> UIViewController {
-        
-        let storyboard = UIStoryboard(name: "Info", bundle:Bundle.main)
-        let controller = storyboard.instantiateViewController(identifier:"Login")
-        return controller
-    }
-    
-    func updateUIViewController(_ uiViewController: UIViewController, context: UIViewControllerRepresentableContext<InfoController>) {
-        
-    }
-    
-}

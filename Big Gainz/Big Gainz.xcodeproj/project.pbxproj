@@ -104,12 +104,12 @@
 			children = (
 				4AB49F4127CF4E3D00FA2A90 /* Big_GainzApp.swift */,
 				4AB49F4327CF4E3D00FA2A90 /* ContentView.swift */,
-				4AB49F4527CF4E4100FA2A90 /* Assets.xcassets */,
-				4AB49F4727CF4E4100FA2A90 /* Preview Content */,
 				4A73887D27CF5F8C00A4353C /* HomePageView.swift */,
+				02F35D6527E70085008DCD95 /* LoginInfoView.swift */,
 				B55DF7F627E671730000BC68 /* MainLogView.swift */,
 				B55DF7F827E6FCE30000BC68 /* SideMenuView.swift */,
-				02F35D6527E70085008DCD95 /* LoginInfoView.swift */,
+				4AB49F4527CF4E4100FA2A90 /* Assets.xcassets */,
+				4AB49F4727CF4E4100FA2A90 /* Preview Content */,
 			);
 			path = "Big Gainz";
 			sourceTree = "<group>";
