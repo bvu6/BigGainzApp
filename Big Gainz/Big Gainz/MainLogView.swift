@@ -28,8 +28,19 @@ struct MainLog: View {
                     .position(x: 325, y: 250)
                 
             }
-              
+            .toolbar {
+                    
+                    Button {
+                      
+                    } label: {
+                        Image(systemName: "text.justify")
+                            .font(.title)
+                            .foregroundColor(.orange)
+                    }
+                      
                 
+              
+            }
                 
                 
             }
