@@ -17,6 +17,7 @@
 		4AB49F5D27CF4E4100FA2A90 /* Big_GainzUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB49F5C27CF4E4100FA2A90 /* Big_GainzUITests.swift */; };
 		4AB49F5F27CF4E4100FA2A90 /* Big_GainzUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB49F5E27CF4E4100FA2A90 /* Big_GainzUITestsLaunchTests.swift */; };
 		B55DF7F727E671730000BC68 /* MainLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55DF7F627E671730000BC68 /* MainLogView.swift */; };
+		B55DF7F927E6FCE30000BC68 /* SideMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55DF7F827E6FCE30000BC68 /* SideMenuView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		4AB49F5C27CF4E4100FA2A90 /* Big_GainzUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Big_GainzUITests.swift; sourceTree = "<group>"; };
 		4AB49F5E27CF4E4100FA2A90 /* Big_GainzUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Big_GainzUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		B55DF7F627E671730000BC68 /* MainLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainLogView.swift; sourceTree = "<group>"; };
+		B55DF7F827E6FCE30000BC68 /* SideMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 				4A73887D27CF5F8C00A4353C /* HomePageView.swift */,
 				028B10FC27CF721C0098FFB1 /* Info.storyboard */,
 				B55DF7F627E671730000BC68 /* MainLogView.swift */,
+				B55DF7F827E6FCE30000BC68 /* SideMenuView.swift */,
 			);
 			path = "Big Gainz";
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 			files = (
 				4AB49F4427CF4E3D00FA2A90 /* ContentView.swift in Sources */,
 				4A73887E27CF5F8C00A4353C /* HomePageView.swift in Sources */,
+				B55DF7F927E6FCE30000BC68 /* SideMenuView.swift in Sources */,
 				4AB49F4227CF4E3D00FA2A90 /* Big_GainzApp.swift in Sources */,
 				B55DF7F727E671730000BC68 /* MainLogView.swift in Sources */,
 			);
