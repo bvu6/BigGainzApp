@@ -15,7 +15,6 @@ struct LoginInfoView: View {
     @State private var userWeight: String = ""
     
     var body: some View {
-        NavigationView {
             VStack() {
                 Text("Big Gainz")
                     .font((.system(size: 70, weight: .semibold, design: .serif)))
@@ -76,7 +75,7 @@ struct LoginInfoView: View {
                  
             }
             .background(Color.gray)
-        }
+        
     }
 }
 

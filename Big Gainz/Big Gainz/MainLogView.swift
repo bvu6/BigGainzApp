@@ -10,12 +10,13 @@ import SwiftUI
 struct MainLog: View {
     @State private var showMenu: Bool = false
     var body: some View {
-        NavigationView{
-            VStack{
-                Text("Workout Log")
-                    .font((.system(size: 30, weight: .semibold, design: .serif)))
-                    .foregroundColor(Color.orange)
-                    .position(x: 200, y: -100)
+        NavigationView {
+          
+          ZStack {
+            
+            Color.gray.ignoresSafeArea(.all, edges: .all)
+            
+            VStack {
                 Button{
                     
                 }
@@ -26,40 +27,50 @@ struct MainLog: View {
                     .padding()
                     .background(Color.orange)
                     .clipShape(Circle())
-                    .position(x: 200, y: 250)
+                    .position(x: 200, y: 500)
                 
             }
-                
-            GeometryReader { _ in
-                          HStack {
-                            Spacer()
-                            SideMenuView()
-                              .offset(x: showMenu ? 0 : UIScreen.main.bounds.width)
-                              .animation(.easeInOut(duration: 0.4), value: showMenu)
-                          }
-                          
-                        }
-            .toolbar {
-                    
-                    Button {
-                        self.showMenu.toggle()
-                    } label: {
-                        Image(systemName: "text.justify")
-                            .font(.title)
-                            .foregroundColor(.orange)
-                    }
-                      
-                
-              
-            }
-                
-                
             }
             
-            .background(Color.gray)
+            GeometryReader { _ in
+              
+              HStack {
+                Spacer()
+                
+                SideMenuView()
+                  .offset(x: showMenu ? 0 : UIScreen.main.bounds.width)
+                  .animation(.easeInOut(duration: 0.4), value: showMenu)
+              }
+              
+            }
+            .background(Color.black.opacity(showMenu ? 0.5 : 0))
+            
+          }
+          
+          .navigationTitle("Workout Log")
+          .navigationBarTitleDisplayMode(.inline)
+          .toolbar {
+            
+            Button {
+              self.showMenu.toggle()
+            } label: {
+              
+              if showMenu {
+                
+                Image(systemName: "xmark")
+                  .font(.title)
+                  .foregroundColor(.orange)
+                
+              } else {
+                Image(systemName: "text.justify")
+                  .font(.title)
+                  .foregroundColor(.orange)
+              }
+              
+            }
+          }
         }
-           
-    }
+      }
 }
 
 struct MainLog_Previews: PreviewProvider {
