@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct MainLog: View {
+    @State private var showMenu: Bool = false
     var body: some View {
         NavigationView{
             VStack{
@@ -25,13 +26,23 @@ struct MainLog: View {
                     .padding()
                     .background(Color.orange)
                     .clipShape(Circle())
-                    .position(x: 325, y: 250)
+                    .position(x: 200, y: 250)
                 
             }
+                
+            GeometryReader { _ in
+                          HStack {
+                            Spacer()
+                            SideMenuView()
+                              .offset(x: showMenu ? 0 : UIScreen.main.bounds.width)
+                              .animation(.easeInOut(duration: 0.4), value: showMenu)
+                          }
+                          
+                        }
             .toolbar {
                     
                     Button {
-                      
+                        self.showMenu.toggle()
                     } label: {
                         Image(systemName: "text.justify")
                             .font(.title)

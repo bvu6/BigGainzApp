@@ -25,7 +25,7 @@ struct SideMenuView: View {
               
                 Spacer()
             }
-            .padding(32)
+            .padding(16)
             .background(Color.black)
             .edgesIgnoringSafeArea(.bottom)
           }
