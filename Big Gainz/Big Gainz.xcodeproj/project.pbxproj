@@ -8,7 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		02F35D6627E70085008DCD95 /* LoginInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F35D6527E70085008DCD95 /* LoginInfoView.swift */; };
+		2290EFB5BB9FE6D0F1DE9170 /* Pods_Big_GainzTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6833E3D4BCB298C97C4E43A2 /* Pods_Big_GainzTests.framework */; };
 		4A73887E27CF5F8C00A4353C /* HomePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A73887D27CF5F8C00A4353C /* HomePageView.swift */; };
+		4A8A1EF027F46DC100780376 /* DB_Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8A1EEF27F46DC100780376 /* DB_Manager.swift */; };
+		4A8A1EF227F476F500780376 /* DB_Tables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8A1EF127F476F500780376 /* DB_Tables.swift */; };
 		4AB49F4227CF4E3D00FA2A90 /* Big_GainzApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB49F4127CF4E3D00FA2A90 /* Big_GainzApp.swift */; };
 		4AB49F4427CF4E3D00FA2A90 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB49F4327CF4E3D00FA2A90 /* ContentView.swift */; };
 		4AB49F4627CF4E4100FA2A90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AB49F4527CF4E4100FA2A90 /* Assets.xcassets */; };
@@ -16,8 +19,10 @@
 		4AB49F5327CF4E4100FA2A90 /* Big_GainzTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB49F5227CF4E4100FA2A90 /* Big_GainzTests.swift */; };
 		4AB49F5D27CF4E4100FA2A90 /* Big_GainzUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB49F5C27CF4E4100FA2A90 /* Big_GainzUITests.swift */; };
 		4AB49F5F27CF4E4100FA2A90 /* Big_GainzUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB49F5E27CF4E4100FA2A90 /* Big_GainzUITestsLaunchTests.swift */; };
+		4D54F88A83D9204980CB6582 /* Pods_Big_Gainz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16688E0CE39BFA5F38359B18 /* Pods_Big_Gainz.framework */; };
 		B55DF7F727E671730000BC68 /* MainLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55DF7F627E671730000BC68 /* MainLogView.swift */; };
 		B55DF7F927E6FCE30000BC68 /* SideMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55DF7F827E6FCE30000BC68 /* SideMenuView.swift */; };
+		BA2ACC857CD0D3579F6E99A2 /* Pods_Big_Gainz_Big_GainzUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58B3FBC5A725F61FF0724FBD /* Pods_Big_Gainz_Big_GainzUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +44,13 @@
 
 /* Begin PBXFileReference section */
 		02F35D6527E70085008DCD95 /* LoginInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInfoView.swift; sourceTree = "<group>"; };
+		045AF5381153B4316AAB37DB /* Pods-Big Gainz.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Big Gainz.debug.xcconfig"; path = "Target Support Files/Pods-Big Gainz/Pods-Big Gainz.debug.xcconfig"; sourceTree = "<group>"; };
+		0AABBC10AC75B9C15A92C191 /* Pods-Big GainzTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Big GainzTests.release.xcconfig"; path = "Target Support Files/Pods-Big GainzTests/Pods-Big GainzTests.release.xcconfig"; sourceTree = "<group>"; };
+		0F0F9D454E61CA64C24BE9F8 /* Pods-Big Gainz-Big GainzUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Big Gainz-Big GainzUITests.release.xcconfig"; path = "Target Support Files/Pods-Big Gainz-Big GainzUITests/Pods-Big Gainz-Big GainzUITests.release.xcconfig"; sourceTree = "<group>"; };
+		16688E0CE39BFA5F38359B18 /* Pods_Big_Gainz.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Big_Gainz.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A73887D27CF5F8C00A4353C /* HomePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageView.swift; sourceTree = "<group>"; };
+		4A8A1EEF27F46DC100780376 /* DB_Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DB_Manager.swift; sourceTree = "<group>"; };
+		4A8A1EF127F476F500780376 /* DB_Tables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DB_Tables.swift; sourceTree = "<group>"; };
 		4AB49F3E27CF4E3D00FA2A90 /* Big Gainz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Big Gainz.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AB49F4127CF4E3D00FA2A90 /* Big_GainzApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Big_GainzApp.swift; sourceTree = "<group>"; };
 		4AB49F4327CF4E3D00FA2A90 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -50,6 +61,11 @@
 		4AB49F5827CF4E4100FA2A90 /* Big GainzUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Big GainzUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AB49F5C27CF4E4100FA2A90 /* Big_GainzUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Big_GainzUITests.swift; sourceTree = "<group>"; };
 		4AB49F5E27CF4E4100FA2A90 /* Big_GainzUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Big_GainzUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4BCD43B6FF7EC054C9ABEF9B /* Pods-Big GainzTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Big GainzTests.debug.xcconfig"; path = "Target Support Files/Pods-Big GainzTests/Pods-Big GainzTests.debug.xcconfig"; sourceTree = "<group>"; };
+		571A5D0FF6B7086B82E956CE /* Pods-Big Gainz.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Big Gainz.release.xcconfig"; path = "Target Support Files/Pods-Big Gainz/Pods-Big Gainz.release.xcconfig"; sourceTree = "<group>"; };
+		58B3FBC5A725F61FF0724FBD /* Pods_Big_Gainz_Big_GainzUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Big_Gainz_Big_GainzUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6833E3D4BCB298C97C4E43A2 /* Pods_Big_GainzTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Big_GainzTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC0C44B629EA8B2BFCF23664 /* Pods-Big Gainz-Big GainzUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Big Gainz-Big GainzUITests.debug.xcconfig"; path = "Target Support Files/Pods-Big Gainz-Big GainzUITests/Pods-Big Gainz-Big GainzUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B55DF7F627E671730000BC68 /* MainLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainLogView.swift; sourceTree = "<group>"; };
 		B55DF7F827E6FCE30000BC68 /* SideMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -59,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D54F88A83D9204980CB6582 /* Pods_Big_Gainz.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2290EFB5BB9FE6D0F1DE9170 /* Pods_Big_GainzTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,12 +91,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA2ACC857CD0D3579F6E99A2 /* Pods_Big_Gainz_Big_GainzUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		099169AED4ED713B7DCFF41C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				045AF5381153B4316AAB37DB /* Pods-Big Gainz.debug.xcconfig */,
+				571A5D0FF6B7086B82E956CE /* Pods-Big Gainz.release.xcconfig */,
+				AC0C44B629EA8B2BFCF23664 /* Pods-Big Gainz-Big GainzUITests.debug.xcconfig */,
+				0F0F9D454E61CA64C24BE9F8 /* Pods-Big Gainz-Big GainzUITests.release.xcconfig */,
+				4BCD43B6FF7EC054C9ABEF9B /* Pods-Big GainzTests.debug.xcconfig */,
+				0AABBC10AC75B9C15A92C191 /* Pods-Big GainzTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		3FA53591D98E412F7E398AEE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				16688E0CE39BFA5F38359B18 /* Pods_Big_Gainz.framework */,
+				58B3FBC5A725F61FF0724FBD /* Pods_Big_Gainz_Big_GainzUITests.framework */,
+				6833E3D4BCB298C97C4E43A2 /* Pods_Big_GainzTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4AB49F3527CF4E3D00FA2A90 = {
 			isa = PBXGroup;
 			children = (
@@ -86,6 +128,8 @@
 				4AB49F5127CF4E4100FA2A90 /* Big GainzTests */,
 				4AB49F5B27CF4E4100FA2A90 /* Big GainzUITests */,
 				4AB49F3F27CF4E3D00FA2A90 /* Products */,
+				099169AED4ED713B7DCFF41C /* Pods */,
+				3FA53591D98E412F7E398AEE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,7 +149,9 @@
 				4AB49F4127CF4E3D00FA2A90 /* Big_GainzApp.swift */,
 				4AB49F4327CF4E3D00FA2A90 /* ContentView.swift */,
 				4A73887D27CF5F8C00A4353C /* HomePageView.swift */,
+				4A8A1EF127F476F500780376 /* DB_Tables.swift */,
 				02F35D6527E70085008DCD95 /* LoginInfoView.swift */,
+				4A8A1EEF27F46DC100780376 /* DB_Manager.swift */,
 				B55DF7F627E671730000BC68 /* MainLogView.swift */,
 				B55DF7F827E6FCE30000BC68 /* SideMenuView.swift */,
 				4AB49F4527CF4E4100FA2A90 /* Assets.xcassets */,
@@ -146,6 +192,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4AB49F6227CF4E4100FA2A90 /* Build configuration list for PBXNativeTarget "Big Gainz" */;
 			buildPhases = (
+				0FCFDC9434AAB72EEDC48C6F /* [CP] Check Pods Manifest.lock */,
 				4AB49F3A27CF4E3D00FA2A90 /* Sources */,
 				4AB49F3B27CF4E3D00FA2A90 /* Frameworks */,
 				4AB49F3C27CF4E3D00FA2A90 /* Resources */,
@@ -163,6 +210,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4AB49F6527CF4E4100FA2A90 /* Build configuration list for PBXNativeTarget "Big GainzTests" */;
 			buildPhases = (
+				0479A8F6967C6ED5B4354629 /* [CP] Check Pods Manifest.lock */,
 				4AB49F4A27CF4E4100FA2A90 /* Sources */,
 				4AB49F4B27CF4E4100FA2A90 /* Frameworks */,
 				4AB49F4C27CF4E4100FA2A90 /* Resources */,
@@ -181,6 +229,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4AB49F6827CF4E4100FA2A90 /* Build configuration list for PBXNativeTarget "Big GainzUITests" */;
 			buildPhases = (
+				64028B15F42A6BAF6545ADC2 /* [CP] Check Pods Manifest.lock */,
 				4AB49F5427CF4E4100FA2A90 /* Sources */,
 				4AB49F5527CF4E4100FA2A90 /* Frameworks */,
 				4AB49F5627CF4E4100FA2A90 /* Resources */,
@@ -264,13 +313,84 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0479A8F6967C6ED5B4354629 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Big GainzTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0FCFDC9434AAB72EEDC48C6F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Big Gainz-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		64028B15F42A6BAF6545ADC2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Big Gainz-Big GainzUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4AB49F3A27CF4E3D00FA2A90 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				4AB49F4427CF4E3D00FA2A90 /* ContentView.swift in Sources */,
+				4A8A1EF227F476F500780376 /* DB_Tables.swift in Sources */,
 				02F35D6627E70085008DCD95 /* LoginInfoView.swift in Sources */,
+				4A8A1EF027F46DC100780376 /* DB_Manager.swift in Sources */,
 				4A73887E27CF5F8C00A4353C /* HomePageView.swift in Sources */,
 				B55DF7F927E6FCE30000BC68 /* SideMenuView.swift in Sources */,
 				4AB49F4227CF4E3D00FA2A90 /* Big_GainzApp.swift in Sources */,
@@ -429,6 +549,7 @@
 		};
 		4AB49F6327CF4E4100FA2A90 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 045AF5381153B4316AAB37DB /* Pods-Big Gainz.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -458,6 +579,7 @@
 		};
 		4AB49F6427CF4E4100FA2A90 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 571A5D0FF6B7086B82E956CE /* Pods-Big Gainz.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -487,6 +609,7 @@
 		};
 		4AB49F6627CF4E4100FA2A90 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4BCD43B6FF7EC054C9ABEF9B /* Pods-Big GainzTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -506,6 +629,7 @@
 		};
 		4AB49F6727CF4E4100FA2A90 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0AABBC10AC75B9C15A92C191 /* Pods-Big GainzTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -525,6 +649,7 @@
 		};
 		4AB49F6927CF4E4100FA2A90 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC0C44B629EA8B2BFCF23664 /* Pods-Big Gainz-Big GainzUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -542,6 +667,7 @@
 		};
 		4AB49F6A27CF4E4100FA2A90 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F0F9D454E61CA64C24BE9F8 /* Pods-Big Gainz-Big GainzUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
