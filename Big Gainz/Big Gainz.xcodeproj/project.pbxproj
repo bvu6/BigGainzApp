@@ -22,7 +22,8 @@
 		4D54F88A83D9204980CB6582 /* Pods_Big_Gainz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16688E0CE39BFA5F38359B18 /* Pods_Big_Gainz.framework */; };
 		B55DF7F727E671730000BC68 /* MainLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55DF7F627E671730000BC68 /* MainLogView.swift */; };
 		B55DF7F927E6FCE30000BC68 /* SideMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55DF7F827E6FCE30000BC68 /* SideMenuView.swift */; };
-		B5BC4FB327F95D8100789D48 /* WorkoutLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BC4FB227F95D8100789D48 /* WorkoutLogView.swift */; };
+		B5BC4FB327F95D8100789D48 /* HistoryLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BC4FB227F95D8100789D48 /* HistoryLogView.swift */; };
+		B5BC4FB527F9703100789D48 /* WorkoutsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BC4FB427F9703100789D48 /* WorkoutsView.swift */; };
 		BA2ACC857CD0D3579F6E99A2 /* Pods_Big_Gainz_Big_GainzUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58B3FBC5A725F61FF0724FBD /* Pods_Big_Gainz_Big_GainzUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -69,7 +70,8 @@
 		AC0C44B629EA8B2BFCF23664 /* Pods-Big Gainz-Big GainzUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Big Gainz-Big GainzUITests.debug.xcconfig"; path = "Target Support Files/Pods-Big Gainz-Big GainzUITests/Pods-Big Gainz-Big GainzUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B55DF7F627E671730000BC68 /* MainLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainLogView.swift; sourceTree = "<group>"; };
 		B55DF7F827E6FCE30000BC68 /* SideMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuView.swift; sourceTree = "<group>"; };
-		B5BC4FB227F95D8100789D48 /* WorkoutLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutLogView.swift; sourceTree = "<group>"; };
+		B5BC4FB227F95D8100789D48 /* HistoryLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryLogView.swift; sourceTree = "<group>"; };
+		B5BC4FB427F9703100789D48 /* WorkoutsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,7 +158,8 @@
 				4A8A1EEF27F46DC100780376 /* DB_Manager.swift */,
 				B55DF7F627E671730000BC68 /* MainLogView.swift */,
 				B55DF7F827E6FCE30000BC68 /* SideMenuView.swift */,
-				B5BC4FB227F95D8100789D48 /* WorkoutLogView.swift */,
+				B5BC4FB227F95D8100789D48 /* HistoryLogView.swift */,
+				B5BC4FB427F9703100789D48 /* WorkoutsView.swift */,
 				4AB49F4527CF4E4100FA2A90 /* Assets.xcassets */,
 				4AB49F4727CF4E4100FA2A90 /* Preview Content */,
 			);
@@ -432,7 +435,8 @@
 				4A8A1EF027F46DC100780376 /* DB_Manager.swift in Sources */,
 				4A73887E27CF5F8C00A4353C /* HomePageView.swift in Sources */,
 				B55DF7F927E6FCE30000BC68 /* SideMenuView.swift in Sources */,
-				B5BC4FB327F95D8100789D48 /* WorkoutLogView.swift in Sources */,
+				B5BC4FB527F9703100789D48 /* WorkoutsView.swift in Sources */,
+				B5BC4FB327F95D8100789D48 /* HistoryLogView.swift in Sources */,
 				4AB49F4227CF4E3D00FA2A90 /* Big_GainzApp.swift in Sources */,
 				B55DF7F727E671730000BC68 /* MainLogView.swift in Sources */,
 			);

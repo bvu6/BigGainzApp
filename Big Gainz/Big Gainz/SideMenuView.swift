@@ -10,18 +10,21 @@ import SwiftUI
 struct SideMenuView: View {
     var body: some View {
         VStack {
+            NavigationLink(destination: HistoryLogView()){
               Text("History")
                 .font(.title)
                 .foregroundColor(.white)
+            }
               
               Divider()
                 .frame(width: 200, height: 2)
                 .background(Color.white)
                 .padding(.horizontal, 16)
-            
+            NavigationLink(destination: WorkoutsView()){
               Text("Workouts")
                 .font(.title)
                 .foregroundColor(.white)
+            }
               
                 Spacer()
             }
