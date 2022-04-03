@@ -22,6 +22,7 @@
 		4D54F88A83D9204980CB6582 /* Pods_Big_Gainz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16688E0CE39BFA5F38359B18 /* Pods_Big_Gainz.framework */; };
 		B55DF7F727E671730000BC68 /* MainLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55DF7F627E671730000BC68 /* MainLogView.swift */; };
 		B55DF7F927E6FCE30000BC68 /* SideMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55DF7F827E6FCE30000BC68 /* SideMenuView.swift */; };
+		B5BC4FB327F95D8100789D48 /* WorkoutLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BC4FB227F95D8100789D48 /* WorkoutLogView.swift */; };
 		BA2ACC857CD0D3579F6E99A2 /* Pods_Big_Gainz_Big_GainzUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58B3FBC5A725F61FF0724FBD /* Pods_Big_Gainz_Big_GainzUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +69,7 @@
 		AC0C44B629EA8B2BFCF23664 /* Pods-Big Gainz-Big GainzUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Big Gainz-Big GainzUITests.debug.xcconfig"; path = "Target Support Files/Pods-Big Gainz-Big GainzUITests/Pods-Big Gainz-Big GainzUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B55DF7F627E671730000BC68 /* MainLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainLogView.swift; sourceTree = "<group>"; };
 		B55DF7F827E6FCE30000BC68 /* SideMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuView.swift; sourceTree = "<group>"; };
+		B5BC4FB227F95D8100789D48 /* WorkoutLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutLogView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +156,7 @@
 				4A8A1EEF27F46DC100780376 /* DB_Manager.swift */,
 				B55DF7F627E671730000BC68 /* MainLogView.swift */,
 				B55DF7F827E6FCE30000BC68 /* SideMenuView.swift */,
+				B5BC4FB227F95D8100789D48 /* WorkoutLogView.swift */,
 				4AB49F4527CF4E4100FA2A90 /* Assets.xcassets */,
 				4AB49F4727CF4E4100FA2A90 /* Preview Content */,
 			);
@@ -196,6 +199,7 @@
 				4AB49F3A27CF4E3D00FA2A90 /* Sources */,
 				4AB49F3B27CF4E3D00FA2A90 /* Frameworks */,
 				4AB49F3C27CF4E3D00FA2A90 /* Resources */,
+				C5EC9BEBB14F0001261D617B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -233,6 +237,7 @@
 				4AB49F5427CF4E4100FA2A90 /* Sources */,
 				4AB49F5527CF4E4100FA2A90 /* Frameworks */,
 				4AB49F5627CF4E4100FA2A90 /* Resources */,
+				B3F6C27F7F8C0889C4464EFC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -380,6 +385,40 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		B3F6C27F7F8C0889C4464EFC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Big Gainz-Big GainzUITests/Pods-Big Gainz-Big GainzUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Big Gainz-Big GainzUITests/Pods-Big Gainz-Big GainzUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Big Gainz-Big GainzUITests/Pods-Big Gainz-Big GainzUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C5EC9BEBB14F0001261D617B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Big Gainz/Pods-Big Gainz-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Big Gainz/Pods-Big Gainz-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Big Gainz/Pods-Big Gainz-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -393,6 +432,7 @@
 				4A8A1EF027F46DC100780376 /* DB_Manager.swift in Sources */,
 				4A73887E27CF5F8C00A4353C /* HomePageView.swift in Sources */,
 				B55DF7F927E6FCE30000BC68 /* SideMenuView.swift in Sources */,
+				B5BC4FB327F95D8100789D48 /* WorkoutLogView.swift in Sources */,
 				4AB49F4227CF4E3D00FA2A90 /* Big_GainzApp.swift in Sources */,
 				B55DF7F727E671730000BC68 /* MainLogView.swift in Sources */,
 			);

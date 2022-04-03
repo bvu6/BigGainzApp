@@ -9,6 +9,7 @@ import SwiftUI
 
 struct MainLog: View {
     @State private var showMenu: Bool = false
+    
     var body: some View {
         NavigationView {
           
@@ -17,8 +18,22 @@ struct MainLog: View {
             Color.gray.ignoresSafeArea(.all, edges: .all)
             
             VStack {
-                Button{
-                    
+                RoundedRectangle(cornerRadius: 10)
+                    .frame(width: 330.0, height: 400.0)
+                    .position(x:200, y:250)
+                    .foregroundColor(/*@START_MENU_TOKEN@*/.black/*@END_MENU_TOKEN@*/)
+                    .overlay(
+                        Group {
+                            Text("New Workout")
+                                .font(.headline)
+                                .foregroundColor(.orange)
+                                .multilineTextAlignment(.center)
+                                .position(x: 200, y:70)
+                               
+                       }
+                    )
+                Button {
+                   
                 }
             label:{
                 Text("+")
@@ -27,8 +42,10 @@ struct MainLog: View {
                     .padding()
                     .background(Color.orange)
                     .clipShape(Circle())
-                    .position(x: 200, y: 500)
-                
+                    .position(x: 200, y: 200)
+                  
+                    
+
             }
             }
             
