@@ -61,20 +61,27 @@ struct LoginInfoView: View {
                     
                     }
                     )
+                NavigationLink(destination: MainLog()){
+                Button {
+                   
+                }
+            label:{
+                Text("Enter")
+                    .font(.headline)
+                    .frame(width: 300, height: 50)
+                    
+                    .background(LinearGradient(gradient: Gradient(colors: [Color.orange, Color.black]), startPoint: .leading, endPoint: .trailing))
+                    .foregroundColor(.white)
+                    .cornerRadius(20);
+
+            }
+                }
+                
         
-                    NavigationLink(destination: MainLog()) {
-                        Text("Enter")
-                        .frame(minWidth: 0, maxWidth: 150)
-                        .padding()
-                        .foregroundColor(.white)
-                        .background(LinearGradient(gradient: Gradient(colors: [Color.orange, Color.black]), startPoint: .leading, endPoint: .trailing))
-                        .cornerRadius(30)
-                        .font(.title)
-                        .position(x: 200, y: -150)
-                    }
                  
             }
             .background(Color.gray)
+            .ignoresSafeArea(.keyboard)
         
     }
 }
