@@ -15,7 +15,7 @@ struct LoginInfoView: View {
     @State private var userWeight: String = ""
     
     var body: some View {
-            VStack() {
+            VStack {
                 Text("Big Gainz")
                     .font((.system(size: 70, weight: .semibold, design: .serif)))
                         .foregroundColor(Color.orange)

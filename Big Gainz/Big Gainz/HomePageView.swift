@@ -10,7 +10,7 @@ import SwiftUI
 struct HomePageView: View {
     var body: some View {
         Text("Home Page")
-        NavigationLink(destination: LoginInfoView()) {
+        NavigationLink(destination: LoginView()) {
             Text("Login")
             .frame(minWidth: 0, maxWidth: 250)
             .padding()

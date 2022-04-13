@@ -78,10 +78,7 @@ struct LoginView: View {
             })
                 .padding(.top,20)
             NavigationLink(destination: MainLog()){
-            Button {
-               
-            }
-            label:{
+           
             Image(systemName: "arrow.right")
                                 .font(.system(size:24, weight: .bold))
                                 .foregroundColor(.white)
@@ -89,7 +86,7 @@ struct LoginView: View {
                                 .background(Color.orange)
                                 .clipShape(Circle())
 
-        }
+        
             }
             
         }
