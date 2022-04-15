@@ -12,10 +12,9 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             VStack {
-                Text("Big Gainz")
-                    .font((.system(size: 70, weight: .semibold, design: .serif)))
-                    .foregroundColor(Color.orange)
-                    .position(x: 200, y: 200)
+                Image("Logo")
+                    .resizable()
+                    .scaledToFit()
             
                 NavigationLink(destination: HomePageView()) {
                     Text("Let's Get Started!")
@@ -25,7 +24,7 @@ struct ContentView: View {
                     .background(LinearGradient(gradient: Gradient(colors: [Color.orange, Color.black]), startPoint: .leading, endPoint: .trailing))
                     .cornerRadius(30)
                     .font(.title)
-                    .position(x: 200, y: 50)
+                    .position(x: 210, y: 70)
                 }
             }
             .background(Color.gray)
