@@ -26,6 +26,7 @@
 		B5BC4FB327F95D8100789D48 /* HistoryLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BC4FB227F95D8100789D48 /* HistoryLogView.swift */; };
 		B5BC4FB527F9703100789D48 /* WorkoutsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BC4FB427F9703100789D48 /* WorkoutsView.swift */; };
 		B5F36C6C28069A790097A625 /* ExerciseLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F36C6B28069A790097A625 /* ExerciseLog.swift */; };
+		B5F90192280E80CA00A9D68E /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F90191280E80CA00A9D68E /* SignUpView.swift */; };
 		BA2ACC857CD0D3579F6E99A2 /* Pods_Big_Gainz_Big_GainzUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58B3FBC5A725F61FF0724FBD /* Pods_Big_Gainz_Big_GainzUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -76,6 +77,7 @@
 		B5BC4FB227F95D8100789D48 /* HistoryLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryLogView.swift; sourceTree = "<group>"; };
 		B5BC4FB427F9703100789D48 /* WorkoutsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutsView.swift; sourceTree = "<group>"; };
 		B5F36C6B28069A790097A625 /* ExerciseLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseLog.swift; sourceTree = "<group>"; };
+		B5F90191280E80CA00A9D68E /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +167,7 @@
 				B5BC4FB227F95D8100789D48 /* HistoryLogView.swift */,
 				B5BC4FB427F9703100789D48 /* WorkoutsView.swift */,
 				B580DB7C27FE7A8D00FF7E46 /* LoginView.swift */,
+				B5F90191280E80CA00A9D68E /* SignUpView.swift */,
 				B5F36C6B28069A790097A625 /* ExerciseLog.swift */,
 				4AB49F4527CF4E4100FA2A90 /* Assets.xcassets */,
 				4AB49F4727CF4E4100FA2A90 /* Preview Content */,
@@ -443,6 +446,7 @@
 				B55DF7F927E6FCE30000BC68 /* SideMenuView.swift in Sources */,
 				B5BC4FB527F9703100789D48 /* WorkoutsView.swift in Sources */,
 				B5BC4FB327F95D8100789D48 /* HistoryLogView.swift in Sources */,
+				B5F90192280E80CA00A9D68E /* SignUpView.swift in Sources */,
 				B580DB7D27FE7A8D00FF7E46 /* LoginView.swift in Sources */,
 				4AB49F4227CF4E3D00FA2A90 /* Big_GainzApp.swift in Sources */,
 				B5F36C6C28069A790097A625 /* ExerciseLog.swift in Sources */,
