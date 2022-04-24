@@ -9,7 +9,18 @@ import SwiftUI
 
 struct ChestWorkoutView: View {
     var body: some View {
-        Text("Chest")
+        ScrollView {
+            VStack(spacing: 20) {
+                ForEach(0..<5) {
+                    Text("Item \($0)")
+                        .foregroundColor(.white)
+                        .font(.largeTitle)
+                        .frame(width: 200, height: 200)
+                        .background(Color.red)
+                }
+            }
+        }
+        .frame(height: 350)
 
     }
 }
