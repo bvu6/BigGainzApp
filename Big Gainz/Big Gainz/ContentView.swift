@@ -16,7 +16,7 @@ struct ContentView: View {
                     .resizable()
                     .scaledToFit()
             
-                NavigationLink(destination: HomePageView()) {
+                NavigationLink(destination: SignUpView()) {
                     Text("Let's Get Started!")
                     .frame(minWidth: 0, maxWidth: 250)
                     .padding()

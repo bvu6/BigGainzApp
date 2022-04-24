@@ -91,15 +91,7 @@ struct SignUpView: View {
                             
                         })
                 .padding(.top,20)
-            NavigationLink(destination: LoginView()){
-           
-            Text("Already a Member? Login")
-                                    .fontWeight(.bold)
-                                    .foregroundColor(.orange)
-                                    .multilineTextAlignment(.trailing)
 
-        
-            }
             NavigationLink(destination: MainLog()){
            
             Image(systemName: "arrow.right")
