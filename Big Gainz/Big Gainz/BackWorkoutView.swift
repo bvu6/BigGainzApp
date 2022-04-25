@@ -9,7 +9,21 @@ import SwiftUI
 
 struct BackWorkoutView: View {
     var body: some View {
-        Text("Back")
+        ScrollView {
+            VStack() {
+                Text("Seated Row")
+                    .font(.title)
+                Text ("Lat Pull-Down")
+                    .font(.title)
+                Text ("Single Arm Cable Row")
+                    .font(.title)
+                Text ("Deadlift")
+                    .font(.title)
+                
+            }
+            //background(Color.gray)
+        }
+        .frame(height: 350)
 
     }
 }

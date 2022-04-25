@@ -9,7 +9,23 @@ import SwiftUI
 
 struct LegWorkoutView: View {
     var body: some View {
-        Text("Legs")
+        ScrollView {
+            VStack() {
+                Text("Squat")
+                    .font(.title)
+                Text ("Walking Lunges")
+                    .font(.title)
+                Text ("Hip Thrusts")
+                    .font(.title)
+                Text ("Goblet Squat")
+                    .font(.title)
+                Text ("Leg Curls")
+                    .font(.title)
+                
+            }
+            //background(Color.gray)
+        }
+        .frame(height: 350)
 
     }
 }

@@ -10,15 +10,18 @@ import SwiftUI
 struct ChestWorkoutView: View {
     var body: some View {
         ScrollView {
-            VStack(spacing: 20) {
-                ForEach(0..<5) {
-                    Text("Item \($0)")
-                        .foregroundColor(.white)
-                        .font(.largeTitle)
-                        .frame(width: 200, height: 200)
-                        .background(Color.red)
-                }
+            VStack() {
+                Text("Bench Press")
+                    .font(.title)
+                Text ("Incline Dumbell Press")
+                    .font(.title)
+                Text ("Cable Decline Press")
+                    .font(.title)
+                Text ("Low Cable Flies")
+                    .font(.title)
+                
             }
+            //background(Color.gray)
         }
         .frame(height: 350)
 
