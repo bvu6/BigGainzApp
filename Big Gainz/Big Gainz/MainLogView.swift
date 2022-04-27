@@ -11,15 +11,15 @@ struct MainLog: View {
     @State private var showMenu: Bool = false
     
     var body: some View {
-        NavigationView {
+       
           
           ZStack {
-            
+ 
             Color.gray.ignoresSafeArea(.all, edges: .all)
             
               GeometryReader { geometry in
                       ExerciseLog()
-                      .position(x: geometry.frame(in: .local).midX, y: geometry.frame(in: .local).midY)
+                      //.position(x: geometry.frame(in: .local).midX, y: geometry.frame(in: .local).midY)
                   }
             
             GeometryReader { _ in
@@ -59,7 +59,7 @@ struct MainLog: View {
               
             }
           }
-        }
+        
       }
 }
 
