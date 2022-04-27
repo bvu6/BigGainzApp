@@ -6,14 +6,12 @@
 //
 
 import SwiftUI
-import AVFoundation
-
-var player: AVPlayer?
-@IBOutlet weak var videoViewContainer: UIView!
+import AVKit
 
 struct LegWorkoutView: View {
-    
+    @State var url = Bundle.main.url(forResource: "squat", withExtension: "MOV")
     var body: some View {
+
         ScrollView {
             
             VStack() {
@@ -32,9 +30,19 @@ struct LegWorkoutView: View {
                     Spacer()
                 Text("Continue to lower yourself until your thighs are almost parallel to the floor. Your feet should remain flat on the ground")
                         .frame(maxWidth: .infinity, alignment: .leading)
-                    Big_Gainz.player().frame(height: UIScreen.main.bounds.height / 2.3)
+                    Spacer()
                     
                 }
+                
+                Group {
+                    VideoPlayer(player: AVPlayer(url: url!))
+                    HStack {
+                        Text("Squat Demo").onTapGesture {
+                            url = Bundle.main.url(forResource: "squat", withExtension: "MOV")
+                        }
+                    }
+                }
+                
                 
                 Group{
                 
@@ -90,7 +98,7 @@ struct LegWorkoutView: View {
             //background(Color.gray)
             .padding(16)
         }
-        .frame(height: 550)
+        .frame(maxHeight: .infinity)
         
     }
 }
@@ -100,24 +108,5 @@ struct LegWorkoutView_Previews: PreviewProvider {
     static var previews: some View {
         LegWorkoutView()
     }
-}
-
-func initializeVideoPlayerWithVideo() {
-    guard let path = Bundle.main.path(forResource: "squat", ofType: ".MOV") else {
-        debugPrint("video.m4v not found")
-        return
-    }
-    
-    self.player = AVPlayer(url: URL(fileURLWithPath: path))
-    
-    let layer: AVPlayerLayer = AVPlayerLayer(player: player)
-    
-    layer.frame = videoViewContainer.bounds
-    
-    layer.videoGravity = AVLayerVideoGravity.resizeAspectFill
-    
-    videoViewContainer.layer.addSublayer(layer)
-    
-    player?.play()
 }
 
