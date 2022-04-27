@@ -16,19 +16,21 @@ struct SignUpView: View {
     var body: some View {
         
         VStack{
-            Text("Sign Up")
+            Text("Register")
                 .font(.title)
                 .fontWeight(.bold)
                 .foregroundColor(.black)
                 .kerning(1.9)
                 .frame(width: UIScreen.main.bounds.width)
+                .padding(.bottom, 25)
+                .padding(.top, 25)
             VStack(alignment: .leading, spacing: 8, content:{
                 Text("Name")
                     .fontWeight(.bold)
                     .foregroundColor(.black)
                 TextField("Enter", text:$userName)
                     .font(.system(size: 20, weight: .semibold))
-                    .foregroundColor(Color(.gray))
+                    .foregroundColor(Color(.black))
                     .padding(.top, 5)
                 Divider()
                 
@@ -37,25 +39,12 @@ struct SignUpView: View {
             })
                 .padding(.top, 25)
             VStack(alignment: .leading, spacing: 8, content:{
-                Text("Password")
-                    .fontWeight(.bold)
-                    .foregroundColor(.black)
-                TextField("Enter", text:$userPassword)
-                    .font(.system(size: 20, weight: .semibold))
-                    .foregroundColor(Color(.gray))
-                    .padding(.top, 5)
-                Divider()
-                
-                    
-                
-            })
-            VStack(alignment: .leading, spacing: 8, content:{
                             Text("Age")
                                 .fontWeight(.bold)
                                 .foregroundColor(.black)
                             TextField("Enter", text:$userAge)
                                 .font(.system(size: 20, weight: .semibold))
-                                .foregroundColor(Color(.gray))
+                                .foregroundColor(Color(.black))
                                 .padding(.top, 5)
                             Divider()
                             
@@ -69,7 +58,7 @@ struct SignUpView: View {
                                 .foregroundColor(.black)
                             TextField("Enter", text:$userHeight)
                                 .font(.system(size: 20, weight: .semibold))
-                                .foregroundColor(Color(.gray))
+                                .foregroundColor(Color(.black))
                                 .padding(.top, 5)
                             Divider()
                             
@@ -83,7 +72,7 @@ struct SignUpView: View {
                                 .foregroundColor(.black)
                             TextField("Enter", text:$userWeight)
                                 .font(.system(size: 20, weight: .semibold))
-                                .foregroundColor(Color(.gray))
+                                .foregroundColor(Color(.black))
                                 .padding(.top, 5)
                             Divider()
                             
@@ -91,6 +80,7 @@ struct SignUpView: View {
                             
                         })
                 .padding(.top,20)
+                .padding(.bottom,20)
 
             NavigationLink(destination: MainLog()){
            
@@ -107,6 +97,8 @@ struct SignUpView: View {
         }
         .padding()
         //.background(/*@START_MENU_TOKEN@*//*@PLACEHOLDER=View@*/Color.gray/*@END_MENU_TOKEN@*/)
+        .frame(minWidth: 0, maxWidth: .infinity, minHeight: 50, maxHeight: .infinity, alignment: .topLeading)
+        .background(Color.gray)
         
     }
 
