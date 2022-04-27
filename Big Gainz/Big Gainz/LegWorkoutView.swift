@@ -34,7 +34,10 @@ struct LegWorkoutView: View {
                     
                 }
                 
-                VideoPlayer(player: AVPlayer(url: Bundle.main.url(forResource: "squat", withExtension: "MOV")!)).frame(height: 200)
+                Group {
+                    VideoPlayer(player: AVPlayer(url: Bundle.main.url(forResource: "squat", withExtension: "MOV")!)).frame(height: 200)
+                    Spacer()
+                }
                 
                 Group{
                 
@@ -50,9 +53,9 @@ struct LegWorkoutView: View {
                 Text("Bend both knees and lower your back knee toward the floor. Stop just before it touches down")
                         .frame(maxWidth: .infinity, alignment: .leading)
                     Spacer()
+                    VideoPlayer(player: AVPlayer(url: Bundle.main.url(forResource: "lunges", withExtension: "MOV")!)).frame(height: 200)
+                    Spacer()
                 }
-                
-                VideoPlayer(player: AVPlayer(url: Bundle.main.url(forResource: "lunges", withExtension: "MOV")!)).frame(height: 200)
                 
                 Group{
                 Text ("Hip Thrusts")
@@ -68,6 +71,8 @@ struct LegWorkoutView: View {
                 Text("Squeeze your glutes, press through your heels and drive your hips up so you form a straight line from your knees to your shoulders")
                         .frame(maxWidth: .infinity, alignment: .leading)
                     Spacer()
+                    
+                    VideoPlayer(player: AVPlayer(url: Bundle.main.url(forResource: "hip", withExtension: "MOV")!)).frame(height: 200)
                 }
                 
                 Group{
@@ -86,8 +91,10 @@ struct LegWorkoutView: View {
                         .frame(maxWidth: .infinity, alignment: .leading)
                     Spacer()
                     
+                VideoPlayer(player: AVPlayer(url: Bundle.main.url(forResource: "goblet", withExtension: "mp4")!)).frame(height: 200)
+                    
                 }
-                VideoPlayer(player: AVPlayer(url: Bundle.main.url(forResource: "goblet", withExtension: "MOV")!)).frame(height: 200)
+                
                 
             }
             //background(Color.gray)
