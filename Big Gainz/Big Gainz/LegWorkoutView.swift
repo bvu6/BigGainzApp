@@ -14,7 +14,7 @@ struct LegWorkoutView: View {
     
     var body: some View {
         ScrollView {
-            VStack() {
+            VStack {
                 Group{
                 Text("Squat")
                     .font(.system(size: 24, weight: .semibold, design:.rounded))
