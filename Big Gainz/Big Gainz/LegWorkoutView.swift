@@ -9,11 +9,11 @@ import SwiftUI
 import AVKit
 
 struct LegWorkoutView: View {
-    @State var url = Bundle.main.url(forResource: "squat", withExtension: "MOV")
+    
+    @State private var player = AVPlayer()
+    
     var body: some View {
-
         ScrollView {
-            
             VStack() {
                 Group{
                 Text("Squat")
@@ -34,15 +34,7 @@ struct LegWorkoutView: View {
                     
                 }
                 
-                Group {
-                    VideoPlayer(player: AVPlayer(url: url!))
-                    HStack {
-                        Text("Squat Demo").onTapGesture {
-                            url = Bundle.main.url(forResource: "squat", withExtension: "MOV")
-                        }
-                    }
-                }
-                
+                VideoPlayer(player: AVPlayer(url: Bundle.main.url(forResource: "squat", withExtension: "MOV")!)).frame(height: 200)
                 
                 Group{
                 
@@ -59,6 +51,8 @@ struct LegWorkoutView: View {
                         .frame(maxWidth: .infinity, alignment: .leading)
                     Spacer()
                 }
+                
+                VideoPlayer(player: AVPlayer(url: Bundle.main.url(forResource: "lunges", withExtension: "MOV")!)).frame(height: 200)
                 
                 Group{
                 Text ("Hip Thrusts")
@@ -93,6 +87,7 @@ struct LegWorkoutView: View {
                     Spacer()
                     
                 }
+                VideoPlayer(player: AVPlayer(url: Bundle.main.url(forResource: "goblet", withExtension: "MOV")!)).frame(height: 200)
                 
             }
             //background(Color.gray)
@@ -109,4 +104,3 @@ struct LegWorkoutView_Previews: PreviewProvider {
         LegWorkoutView()
     }
 }
-
