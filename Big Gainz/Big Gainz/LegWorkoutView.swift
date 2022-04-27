@@ -6,10 +6,16 @@
 //
 
 import SwiftUI
+import AVFoundation
+
+var player: AVPlayer?
+@IBOutlet weak var videoViewContainer: UIView!
 
 struct LegWorkoutView: View {
+    
     var body: some View {
         ScrollView {
+            
             VStack() {
                 Group{
                 Text("Squat")
@@ -26,8 +32,10 @@ struct LegWorkoutView: View {
                     Spacer()
                 Text("Continue to lower yourself until your thighs are almost parallel to the floor. Your feet should remain flat on the ground")
                         .frame(maxWidth: .infinity, alignment: .leading)
-                    Spacer()
+                    Big_Gainz.player().frame(height: UIScreen.main.bounds.height / 2.3)
+                    
                 }
+                
                 Group{
                 
                 Text ("Walking Lunges")
@@ -43,6 +51,7 @@ struct LegWorkoutView: View {
                         .frame(maxWidth: .infinity, alignment: .leading)
                     Spacer()
                 }
+                
                 Group{
                 Text ("Hip Thrusts")
                     .font(.system(size: 24, weight: .semibold, design:.rounded))
@@ -58,6 +67,7 @@ struct LegWorkoutView: View {
                         .frame(maxWidth: .infinity, alignment: .leading)
                     Spacer()
                 }
+                
                 Group{
                     
                 Text ("Goblet Squat")
@@ -73,20 +83,41 @@ struct LegWorkoutView: View {
                 Text("Inhale and begin to squat, sitting back in your hips, keeping your core tight and torso upright")
                         .frame(maxWidth: .infinity, alignment: .leading)
                     Spacer()
+                    
                 }
-
                 
             }
             //background(Color.gray)
             .padding(16)
         }
         .frame(height: 550)
-
+        
     }
 }
+
 
 struct LegWorkoutView_Previews: PreviewProvider {
     static var previews: some View {
         LegWorkoutView()
     }
 }
+
+func initializeVideoPlayerWithVideo() {
+    guard let path = Bundle.main.path(forResource: "squat", ofType: ".MOV") else {
+        debugPrint("video.m4v not found")
+        return
+    }
+    
+    self.player = AVPlayer(url: URL(fileURLWithPath: path))
+    
+    let layer: AVPlayerLayer = AVPlayerLayer(player: player)
+    
+    layer.frame = videoViewContainer.bounds
+    
+    layer.videoGravity = AVLayerVideoGravity.resizeAspectFill
+    
+    videoViewContainer.layer.addSublayer(layer)
+    
+    player?.play()
+}
+

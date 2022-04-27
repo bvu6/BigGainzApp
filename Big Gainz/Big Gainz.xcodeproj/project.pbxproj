@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		023C2E8928192FE400727615 /* Workout Videos in Resources */ = {isa = PBXBuildFile; fileRef = 023C2E8828192FE400727615 /* Workout Videos */; };
+		023C2E8F281941A700727615 /* squat.MOV in Resources */ = {isa = PBXBuildFile; fileRef = 023C2E8E2819419400727615 /* squat.MOV */; };
 		02F35D6627E70085008DCD95 /* LoginInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F35D6527E70085008DCD95 /* LoginInfoView.swift */; };
 		2290EFB5BB9FE6D0F1DE9170 /* Pods_Big_GainzTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6833E3D4BCB298C97C4E43A2 /* Pods_Big_GainzTests.framework */; };
 		4A73887E27CF5F8C00A4353C /* HomePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A73887D27CF5F8C00A4353C /* HomePageView.swift */; };
@@ -52,6 +54,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		023C2E8828192FE400727615 /* Workout Videos */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Workout Videos"; sourceTree = SOURCE_ROOT; };
+		023C2E8E2819419400727615 /* squat.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = squat.MOV; sourceTree = "<group>"; };
 		02F35D6527E70085008DCD95 /* LoginInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInfoView.swift; sourceTree = "<group>"; };
 		045AF5381153B4316AAB37DB /* Pods-Big Gainz.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Big Gainz.debug.xcconfig"; path = "Target Support Files/Pods-Big Gainz/Pods-Big Gainz.debug.xcconfig"; sourceTree = "<group>"; };
 		0AABBC10AC75B9C15A92C191 /* Pods-Big GainzTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Big GainzTests.release.xcconfig"; path = "Target Support Files/Pods-Big GainzTests/Pods-Big GainzTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -164,6 +168,7 @@
 		4AB49F4027CF4E3D00FA2A90 /* Big Gainz */ = {
 			isa = PBXGroup;
 			children = (
+				023C2E8828192FE400727615 /* Workout Videos */,
 				4AB49F4127CF4E3D00FA2A90 /* Big_GainzApp.swift */,
 				4AB49F4327CF4E3D00FA2A90 /* ContentView.swift */,
 				4A73887D27CF5F8C00A4353C /* HomePageView.swift */,
@@ -181,6 +186,7 @@
 				B500A7A0280FDAE9005E8297 /* BackWorkoutView.swift */,
 				B500A7A2280FDAF7005E8297 /* ArmWorkoutView.swift */,
 				B500A7A4280FDB05005E8297 /* LegWorkoutView.swift */,
+				023C2E8E2819419400727615 /* squat.MOV */,
 				4AB49F4527CF4E4100FA2A90 /* Assets.xcassets */,
 				4AB49F4727CF4E4100FA2A90 /* Preview Content */,
 			);
@@ -321,8 +327,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				023C2E8F281941A700727615 /* squat.MOV in Resources */,
 				4AB49F4927CF4E4100FA2A90 /* Preview Assets.xcassets in Resources */,
 				4AB49F4627CF4E4100FA2A90 /* Assets.xcassets in Resources */,
+				023C2E8928192FE400727615 /* Workout Videos in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

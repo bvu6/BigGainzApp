@@ -73,7 +73,7 @@ struct ArmWorkoutView: View {
                 }
                 Group{
 
-                Text("Incline Dumbell Curls")
+                Text("Hammer Curls")
                     .font(.system(size: 24, weight: .semibold, design:.rounded))
                     Spacer()
                     Text("Targets: biceps")
