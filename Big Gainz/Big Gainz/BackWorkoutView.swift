@@ -14,7 +14,7 @@ struct BackWorkoutView: View {
                 Group{
                 Text("Seated Row")
                     .font(.system(size: 24, weight: .semibold, design:.rounded))
-                Text("Targets the muscles in your upper back and also helps improve your posture and protect your shoulders")
+                Text("Targets: upper back and improves your posture and protect your shoulders")
                         .multilineTextAlignment(.center)
                 Text("Avoid lifting your elbows up and out, which engages the biceps instead of the lats and rhomboids")
                         .multilineTextAlignment(.center)
@@ -23,7 +23,7 @@ struct BackWorkoutView: View {
                     
                 Text ("Lat Pull-Down")
                     .font(.system(size: 24, weight: .semibold, design:.rounded))
-                Text("Targets the shoulders and entire back")
+                Text("Targets: shoulders and entire back")
                         .multilineTextAlignment(.center)
                 Text("Grasp the bar with a wide grip with an overhand, knuckles-up grip. Pull the bar down until it's approximately level with the chin. Exhale on the downward motion and squeeze the shoulder blades together")
                         .multilineTextAlignment(.center)
@@ -33,7 +33,7 @@ struct BackWorkoutView: View {
                 Group{
                 Text ("Single Arm Cable Row")
                     .font(.system(size: 24, weight: .semibold, design:.rounded))
-                Text("Unilateral exercise that targets the lats, teres major, middle and lower trap")
+                Text("Targets: lats, teres major, middle and lower trap")
                         .multilineTextAlignment(.center)
                 Text("Grab the stirrup handle in your right hand with an overhand grip. Sit up straight with arm out in front.")
                         .multilineTextAlignment(.center)
@@ -43,7 +43,7 @@ struct BackWorkoutView: View {
                 
                 Text ("Deadlift")
                     .font(.system(size: 24, weight: .semibold, design:.rounded))
-                Text("Deadlift works on many muscles such as hamstrings, glutes, back, hips, core, and trapezius.")
+                Text("Targets: hamstrings, glutes, back, hips, core, and trapezius.")
                         .multilineTextAlignment(.center)
                 Text("Stand with your mid-foot under the barbell and bend over to grab the bar with a shoulder-width grip")
                         .multilineTextAlignment(.center)

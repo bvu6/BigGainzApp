@@ -14,7 +14,7 @@ struct ChestWorkoutView: View {
                 Group{
                 Text("Bench Press")
                     .font(.system(size: 24, weight: .semibold, design:.rounded))
-                Text("Works the pectoral muscles, shoulders, and arms")
+                Text("Targets: pectoral muscles, shoulders, and arms")
                         .multilineTextAlignment(.center)
                 Text("Lie on your back on a flat bench. Grip a barbell with hands slightly wider than shoulder width. The bar should be directly over the shoulders")
                         .multilineTextAlignment(.center)
@@ -23,7 +23,7 @@ struct ChestWorkoutView: View {
                     
                 Text ("Incline Dumbell Press")
                     .font(.system(size: 24, weight: .semibold, design:.rounded))
-                Text("Works on the pectoral muscles in your chest, the triceps on the backside of your arms, and the anterior deltoid muscles on the front of your shoulders")
+                Text("Targets: pectoral muscles in your chest, the triceps on the backside of your arms, and the anterior deltoid muscles on the front of your shoulders")
                             .multilineTextAlignment(.center)
                 Text("Brace your core and press both dumbbells straight up over your chest as you exhale. At the top of the movement, the dumbbells should almost touch each other and your arms should be perpendicular to the floor")
                             .multilineTextAlignment(.center)
