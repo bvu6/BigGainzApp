@@ -6,8 +6,12 @@
 //
 
 import SwiftUI
+import AVKit
 
 struct BackWorkoutView: View {
+    
+    @State private var player = AVPlayer()
+    
     var body: some View {
         ScrollView {
             VStack() {

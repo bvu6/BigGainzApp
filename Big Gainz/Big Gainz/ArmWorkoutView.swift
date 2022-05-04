@@ -6,8 +6,12 @@
 //
 
 import SwiftUI
+import AVKit
 
 struct ArmWorkoutView: View {
+    
+    @State private var player = AVPlayer()
+    
     var body: some View {
         ScrollView {
             VStack() {
@@ -25,6 +29,8 @@ struct ArmWorkoutView: View {
                     Spacer()
                 Text("Pause at the top of the movement, and then slowly lower the weight back to the starting position")
                         .frame(maxWidth: .infinity, alignment: .leading)
+                    Spacer()
+                VideoPlayer(player: AVPlayer(url: Bundle.main.url(forResource: "squat", withExtension: "MOV")!)).frame(height: 200)
                     Spacer()
                 }
                 Group{
@@ -97,7 +103,7 @@ struct ArmWorkoutView: View {
             //background(Color.gray)
             .padding(16)
         }
-        .frame(height: 550)
+        .frame(height: .infinity)
 
     }
 }

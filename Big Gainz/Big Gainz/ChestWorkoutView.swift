@@ -6,8 +6,10 @@
 //
 
 import SwiftUI
+import AVKit
 
 struct ChestWorkoutView: View {
+    @State private var player = AVPlayer()
     var body: some View {
         ScrollView {
             VStack() {
@@ -25,7 +27,7 @@ struct ChestWorkoutView: View {
                 Text("Keep your core engaged and maintain a neutral spine position throughout the movement and avoid arching your back.")
                         .frame(maxWidth: .infinity, alignment: .leading)
                     Spacer()
-                        
+    
                 }
                 Group{
                 Text ("Incline Dumbell Press")
@@ -76,7 +78,7 @@ struct ChestWorkoutView: View {
             .padding(16)
             
         }
-        .frame(height: 550)
+        .frame(height: .infinity)
         .background(Color.gray)
 
     }
