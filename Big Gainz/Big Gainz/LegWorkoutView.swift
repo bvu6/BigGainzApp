@@ -104,7 +104,8 @@ struct LegWorkoutView: View {
             //background(Color.gray)
             .padding(16)
         }
-        .frame(maxHeight: .infinity)
+        .frame(height: .infinity)
+        .background(Color.gray)
         
     }
 }

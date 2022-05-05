@@ -113,6 +113,7 @@ struct ArmWorkoutView: View {
             .padding(16)
         }
         .frame(height: .infinity)
+        .background(Color.gray)
 
     }
 }

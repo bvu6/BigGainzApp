@@ -90,7 +90,8 @@ struct BackWorkoutView: View {
             //background(Color.gray)
             .padding(16)
         }
-        .frame(height: 550)
+        .frame(height: .infinity)
+        .background(Color.gray)
 
     }
 }
