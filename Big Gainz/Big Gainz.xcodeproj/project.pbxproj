@@ -10,6 +10,7 @@
 		023B692D28196B8000E4AD28 /* hip.MOV in Resources */ = {isa = PBXBuildFile; fileRef = 02ED827028195C3D00A818A4 /* hip.MOV */; };
 		023B693728196C4F00E4AD28 /* goblet.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 023B693628196C4000E4AD28 /* goblet.mp4 */; };
 		023B693928196DBB00E4AD28 /* workout vids.xib in Resources */ = {isa = PBXBuildFile; fileRef = 023B693828196DBA00E4AD28 /* workout vids.xib */; };
+		023B693E282269CD00E4AD28 /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023B693D282269CD00E4AD28 /* VideoView.swift */; };
 		023C2E8F281941A700727615 /* squat.MOV in Resources */ = {isa = PBXBuildFile; fileRef = 023C2E8E2819419400727615 /* squat.MOV */; };
 		02ED826D28195B7C00A818A4 /* lunges.MOV in Resources */ = {isa = PBXBuildFile; fileRef = 02ED826C28195B5A00A818A4 /* lunges.MOV */; };
 		02F35D6627E70085008DCD95 /* LoginInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F35D6527E70085008DCD95 /* LoginInfoView.swift */; };
@@ -59,6 +60,7 @@
 /* Begin PBXFileReference section */
 		023B693628196C4000E4AD28 /* goblet.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = goblet.mp4; sourceTree = "<group>"; };
 		023B693828196DBA00E4AD28 /* workout vids.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = "workout vids.xib"; sourceTree = "<group>"; };
+		023B693D282269CD00E4AD28 /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
 		023C2E8E2819419400727615 /* squat.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = squat.MOV; sourceTree = "<group>"; };
 		02ED826C28195B5A00A818A4 /* lunges.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = lunges.MOV; sourceTree = "<group>"; };
 		02ED827028195C3D00A818A4 /* hip.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = hip.MOV; sourceTree = "<group>"; };
@@ -191,6 +193,7 @@
 				B500A7A0280FDAE9005E8297 /* BackWorkoutView.swift */,
 				B500A7A2280FDAF7005E8297 /* ArmWorkoutView.swift */,
 				B500A7A4280FDB05005E8297 /* LegWorkoutView.swift */,
+				023B693D282269CD00E4AD28 /* VideoView.swift */,
 				023B693828196DBA00E4AD28 /* workout vids.xib */,
 				023B693628196C4000E4AD28 /* goblet.mp4 */,
 				02ED826C28195B5A00A818A4 /* lunges.MOV */,
@@ -476,6 +479,7 @@
 				4A8A1EF027F46DC100780376 /* DB_Manager.swift in Sources */,
 				4A73887E27CF5F8C00A4353C /* HomePageView.swift in Sources */,
 				B500A7A3280FDAF7005E8297 /* ArmWorkoutView.swift in Sources */,
+				023B693E282269CD00E4AD28 /* VideoView.swift in Sources */,
 				B500A7A5280FDB05005E8297 /* LegWorkoutView.swift in Sources */,
 				B55DF7F927E6FCE30000BC68 /* SideMenuView.swift in Sources */,
 				B5BC4FB527F9703100789D48 /* WorkoutsView.swift in Sources */,

@@ -27,7 +27,9 @@ struct ChestWorkoutView: View {
                 Text("Keep your core engaged and maintain a neutral spine position throughout the movement and avoid arching your back.")
                         .frame(maxWidth: .infinity, alignment: .leading)
                     Spacer()
-    
+                    VideoView(videoID: "GSVQYcDlc-0")
+                        .frame(height: 200)
+                    Spacer()
                 }
                 Group{
                 Text ("Incline Dumbell Press")
@@ -42,6 +44,9 @@ struct ChestWorkoutView: View {
                 Text("Reverse the movement and slowly lower the dumbbells back to the top of your chest as you inhale.")
                         .frame(maxWidth: .infinity, alignment: .leading)
                     Spacer()
+                    VideoView(videoID: "whqrN08ZLqU")
+                        .frame(height: 200)
+                    Spacer()
                 }
                 Group{
                 Text ("Cable Decline Press")
@@ -54,6 +59,9 @@ struct ChestWorkoutView: View {
                     Spacer()
                 Text("Maintain the slight bend in your elbows, neutral wrist position and vertical alignment of your trunk throughout the movement")
                         .frame(maxWidth: .infinity, alignment: .leading)
+                    Spacer()
+                    VideoView(videoID: "WK-sD68viPs")
+                        .frame(height: 200)
                     Spacer()
                 }
 
@@ -68,6 +76,9 @@ struct ChestWorkoutView: View {
                     Spacer()
                 Text("Inhale, slowly lowering down keeping the elbows pulled in")
                         .frame(maxWidth: .infinity, alignment: .leading)
+                    Spacer()
+                    VideoView(videoID: "Q02qkZgrle0")
+                        .frame(height: 200)
                     Spacer()
                 }
                 

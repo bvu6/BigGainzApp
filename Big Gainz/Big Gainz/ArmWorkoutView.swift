@@ -30,8 +30,8 @@ struct ArmWorkoutView: View {
                 Text("Pause at the top of the movement, and then slowly lower the weight back to the starting position")
                         .frame(maxWidth: .infinity, alignment: .leading)
                     Spacer()
-                VideoPlayer(player: AVPlayer(url: Bundle.main.url(forResource: "squat", withExtension: "MOV")!)).frame(height: 200)
-                    Spacer()
+                    VideoView(videoID: "WwDhexSXtbk")
+                        .frame(height: 200)
                 }
                 Group{
         
@@ -47,11 +47,13 @@ struct ArmWorkoutView: View {
                 Text("Press the dumbells directly overhead and do not tilt your hips forward during the move")
                         .frame(maxWidth: .infinity, alignment: .leading)
                     Spacer()
-                    
+                    VideoView(videoID: "gPz7ZjdW0sU")
+                        .frame(height: 200)
+                    Spacer()
                 }
                 Group{
                   
-                Text ("Tricep Row Pushdown")
+                Text ("Tricep Rope Pushdown")
                     .font(.system(size: 24, weight: .semibold, design:.rounded))
                     Spacer()
                 Text("Targets: triceps, all 3 heads of the tricep")
@@ -60,6 +62,9 @@ struct ArmWorkoutView: View {
                
                 Text("Push down until your elbows are fully extended but not in the straight, locked position. Keep your elbows close to your body and bend your knees slightly on the pushdown.")
                         .frame(maxWidth: .infinity, alignment: .leading)
+                    Spacer()
+                    VideoView(videoID: "PoIeFryo9Gc")
+                        .frame(height: 200)
                     Spacer()
                 }
                 Group{
@@ -75,6 +80,9 @@ struct ArmWorkoutView: View {
                     Spacer()
                     Text("Pause for a second at the top of the curl, then slowly lower the weight until your arms are fully extended once again")
                         .frame(maxWidth: .infinity, alignment: .leading)
+                    Spacer()
+                    VideoView(videoID: "lhsPsn02jro")
+                        .frame(height: 200)
                     Spacer()
                 }
                 Group{
@@ -94,10 +102,11 @@ struct ArmWorkoutView: View {
                     Text("Slowly lower the dumbbells back down to your starting position. Don’t release the weights too fast or you could strain your muscles")
                         .frame(maxWidth: .infinity, alignment: .leading)
                     Spacer()
-                    
-                    
                 }
-                
+                Group {
+                    VideoView(videoID: "CyGGQMz_J_A")
+                        .frame(height: 200)
+                }
 
             }
             //background(Color.gray)

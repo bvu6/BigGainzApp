@@ -28,6 +28,9 @@ struct BackWorkoutView: View {
                 Text("Shrugged shoulders and when you pull the weight, keep your shoulders back and down")
                         .frame(maxWidth: .infinity, alignment: .leading)
                     Spacer()
+                    VideoView(videoID: "homOfRwPQZg")
+                        .frame(height: 200)
+                    Spacer()
                 }
                 Group{
                     
@@ -43,6 +46,9 @@ struct BackWorkoutView: View {
                 Text("From the bottom position, with the bar close to your chin, slowly return the bar to the starting position")
                         .frame(maxWidth: .infinity, alignment: .leading)
                     Spacer()
+                    VideoView(videoID: "XYplNjmqAHM")
+                        .frame(height: 200)
+                    Spacer()
                 }
                 Group{
                 Text ("Single Arm Cable Row")
@@ -57,6 +63,9 @@ struct BackWorkoutView: View {
                 Text("Exhale as you pull the handle toward your waist, rotating it so that your palm is facing in when it reaches your side. Pause for a moment and then return to the starting position using slow and controlled movements")
                         .frame(maxWidth: .infinity, alignment: .leading)
                     Spacer()
+                    VideoView(videoID: "BrZpTgC4OIs")
+                        .frame(height: 200)
+                    Spacer()
                 }
                 
                 Group{
@@ -70,6 +79,9 @@ struct BackWorkoutView: View {
                     Spacer()
                 Text("After that, bend your knees until your shins touch the bar, lift your chest up and straighten your lower back. Take a big breath, hold it, and stand up with the weight")
                         .frame(maxWidth: .infinity, alignment: .leading)
+                    Spacer()
+                    VideoView(videoID: "0C6Rg2ioPus")
+                        .frame(height: 200)
                     Spacer()
                 
                 }

@@ -35,7 +35,8 @@ struct LegWorkoutView: View {
                 }
                 
                 Group {
-                    VideoPlayer(player: AVPlayer(url: Bundle.main.url(forResource: "squat", withExtension: "MOV")!)).frame(height: 200)
+                    VideoView(videoID: "17J_8ZpCPhw")
+                        .frame(height: 200)
                     Spacer()
                 }
                 
@@ -53,7 +54,8 @@ struct LegWorkoutView: View {
                 Text("Bend both knees and lower your back knee toward the floor. Stop just before it touches down")
                         .frame(maxWidth: .infinity, alignment: .leading)
                     Spacer()
-                    VideoPlayer(player: AVPlayer(url: Bundle.main.url(forResource: "lunges", withExtension: "MOV")!)).frame(height: 200)
+                    VideoView(videoID: "5M9IihTh4BA")
+                        .frame(height: 200)
                     Spacer()
                 }
                 
@@ -72,7 +74,8 @@ struct LegWorkoutView: View {
                         .frame(maxWidth: .infinity, alignment: .leading)
                     Spacer()
                     
-                    VideoPlayer(player: AVPlayer(url: Bundle.main.url(forResource: "hip", withExtension: "MOV")!)).frame(height: 200)
+                    VideoView(videoID: "_Sa0TcpbDQQ")
+                        .frame(height: 200)
                 }
                 
                 Group{
@@ -91,7 +94,8 @@ struct LegWorkoutView: View {
                         .frame(maxWidth: .infinity, alignment: .leading)
                     Spacer()
                     
-                VideoPlayer(player: AVPlayer(url: Bundle.main.url(forResource: "goblet", withExtension: "mp4")!)).frame(height: 200)
+                    VideoView(videoID: "rQbRaTFm3ps")
+                        .frame(height: 200)
                     
                 }
                 
