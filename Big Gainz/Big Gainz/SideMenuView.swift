@@ -8,63 +8,55 @@
 import SwiftUI
 
 struct SideMenuView: View {
-    @State var expand = false
+    
     var body: some View {
-        VStack {
-
-            HStack{
-              Text("Workouts")
-                .font(.title)
-                .foregroundColor(.white)
-                Image(systemName: expand ? "chevron.up":"chevron.down").resizable().frame(width:13, height:9.0).foregroundColor(.white)
-            }
-                .onTapGesture {
-                    self.expand.toggle()
-                }
-            if expand {
-                VStack{
-                    Divider()
-                        .frame(width: 200, height: 2)
-                        .padding(.horizontal, 16)
-                    NavigationLink(destination: ChestWorkoutView()){
-                    Text("Chest").foregroundColor(.white).font(.title)
-                }
-                    Divider()
-                        .frame(width: 200, height: 2)
-                       // .background(Color.white)
-                        .padding(.horizontal, 16)
+            VStack {
+                Text("Workouts")
+                    .font(.system(size: 40))
+                    .position(x: 178, y: -70)
+                    .foregroundColor(.white)
+                    .padding()
                     
-                    NavigationLink(destination: BackWorkoutView()){
-                        Text("Back").foregroundColor(.white).font(.title)
-                    }
-                    Divider()
-                        .frame(width: 200, height: 2)
-                        //.background(Color.white)
-                        .padding(.horizontal, 16)
-                    NavigationLink(destination: ArmWorkoutView()){
-                        Text("Arms").foregroundColor(.white).font(.title)
-                    }
-                    Divider()
-                        .frame(width: 200, height: 2)
-                        //.background(Color.white)
-                        .padding(.horizontal, 16)
-                    NavigationLink(destination: LegWorkoutView()){
-                        Text("Legs").foregroundColor(.white).font(.title)
-                    }
-                
-            }
-            }
-            
-            
-              
-                Spacer()
-            }
-            .padding(16)
-            .background(Color.black)
-            .edgesIgnoringSafeArea(.bottom)
-          }
-    }
 
+                NavigationLink(destination: ChestWorkoutView()){
+                    Text("Chest")
+                        .font(.system(size: 28))
+                        .position(y: -80)
+                        .foregroundColor(.orange)
+                        .padding()
+                        .frame(width: 200)
+                }
+                
+                NavigationLink(destination: BackWorkoutView()){
+                    Text("Back")
+                        .font(.system(size: 28))
+                        .position(x: 40, y: -80)
+                        .foregroundColor(.orange)
+                        .frame(width: 90, height: 90)
+                        .padding()
+                        
+                }
+                
+                NavigationLink(destination: ArmWorkoutView()){
+                    Text("Arms")
+                        .font(.system(size: 28))
+                        .position(x: 180, y: -80)
+                        .foregroundColor(.orange)
+                        .frame(width: 90, height: 90)
+                        .padding()
+                }
+                
+                NavigationLink(destination: LegWorkoutView()){
+                    Text("Legs")
+                        .font(.system(size: 28))
+                        .position(x: 180, y:-80)
+                        .foregroundColor(.orange)
+                        .padding()
+                }
+            }
+            .background(.black)
+    }
+}
 
 struct SideMenuView_Previews: PreviewProvider {
     static var previews: some View {
