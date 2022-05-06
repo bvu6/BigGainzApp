@@ -49,10 +49,13 @@ struct MainLog: View {
                 .listStyle(.plain)
                 
                 NavigationLink(destination: SideMenuView()){
-                    Image(systemName: "text.justify")
+                    Text("Try New Workouts")
                         .font(.title)
-                        .foregroundColor(.orange)
-                        .position(x: 225, y: 35)
+                        .padding()
+                        .background(Color.orange)
+                        .cornerRadius(40)
+                        .foregroundColor(.white)
+                        .position(x:225, y:50)
                         
                   
                   
