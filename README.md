@@ -32,7 +32,7 @@ Jason Leong
 
 * XCode (Coding Environment)
 * SwiftUI (UI Development)
-* SQLite (Database)
+* Core Data (Database)
 
 ### Testing
 * iPhones for testing (Model 11, 12 Pro, 13 Pro Max)
