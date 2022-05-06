@@ -30,7 +30,7 @@ struct MainLog: View {
             VStack(alignment:.leading){
                 List{
                     ForEach(exercise){
-                        ExerciseEntity in NavigationLink(destination : Text ("\(ExerciseEntity.weight)")){
+                        ExerciseEntity in NavigationLink(destination : EditExerciseView(exercise: ExerciseEntity)){
                             HStack{
                                 VStack(alignment:.leading,spacing:6){
                                     Text(ExerciseEntity.name!)
@@ -66,52 +66,19 @@ struct MainLog: View {
             }
             .navigationViewStyle(.stack)
 
-          ZStack {
- 
-            Color.gray.ignoresSafeArea(.all, edges: .all)
-            
-             // GeometryReader { geometry in
-                      //ExerciseLog()
-                      //.position(x: geometry.frame(in: .local).midX, y: geometry.frame(in: .local).midY)
-                 // }
-            
-            GeometryReader { _ in
-              
-              HStack {
-                Spacer()
-                
-                SideMenuView()
-                  .offset(x: showMenu ? 0 : UIScreen.main.bounds.width)
-                  .animation(.easeInOut(duration: 0.4), value: showMenu)
-              }
-              
-            }
-            .background(Color.black.opacity(showMenu ? 0.5 : 0))
-            
-          }
+
           
           .navigationTitle("Workout Log")
           .navigationBarTitleDisplayMode(.inline)
-          .toolbar {
-            
-            Button {
-              self.showMenu.toggle()
-            } label: {
-              
-              if showMenu {
-                
-                Image(systemName: "xmark")
-                  .font(.title)
-                  .foregroundColor(.orange)
-                
-              } else {
+    
+            NavigationLink(destination: SideMenuView()){
                 Image(systemName: "text.justify")
-                  .font(.title)
-                  .foregroundColor(.orange)
-              }
+                    .font(.title)
+                    .foregroundColor(.orange)
+              
               
             }
-          }
+          
         
       }
     }

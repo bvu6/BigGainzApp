@@ -11,16 +11,7 @@ struct SideMenuView: View {
     @State var expand = false
     var body: some View {
         VStack {
-            NavigationLink(destination: HistoryLogView()){
-              Text("History")
-                .font(.title)
-                .foregroundColor(.white)
-            }
-              
-              Divider()
-                .frame(width: 200, height: 2)
-                .background(Color.white)
-                .padding(.horizontal, 16)
+
             HStack{
               Text("Workouts")
                 .font(.title)
