@@ -8,17 +8,20 @@
 import SwiftUI
 
 struct HistoryLogView: View {
+   
     var body: some View {
         NavigationView{
-            ZStack{
+            
+            VStack(spacing:20){
+ 
             Text("History")
                 .font(.title)
                 .fontWeight(.bold)
                 .multilineTextAlignment(.center)
-                .position(x:225, y: 0)
+                .position(x:225, y: 30)
+
             }
-            .background(Color.gray)
-        }
+    }
     }
 }
 

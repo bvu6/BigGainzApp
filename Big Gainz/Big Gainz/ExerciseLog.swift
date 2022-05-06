@@ -7,108 +7,50 @@
 
 import SwiftUI
 
+
 struct ExerciseLog: View {
+    @Environment(\.managedObjectContext) var managedObjContext
+    @Environment(\.dismiss) var dismiss
+    
     @State private var exercise: String = ""
     @State private var type: String = ""
-    @State private var reps: String = ""
-    @State private var set: String = ""
-    @State private var intensity: String = ""
-    @State private var weight: String = ""
+    @State private var reps: Double = 0
+    @State private var set: Double = 0
+    @State private var weight: Double = 0
     var body: some View {
-        RoundedRectangle(cornerRadius: 10)
-            .frame(width: 330.0, height: 500.0)
-            .position(x:215, y:350)
-            .foregroundColor(/*@START_MENU_TOKEN@*/.black/*@END_MENU_TOKEN@*/)
-            .overlay(
-                Group {
-                    Text("New Workout")
-                        .font(.headline)
-                        .foregroundColor(.orange)
-                        .multilineTextAlignment(.center)
-                        .position(x: 215, y:125)
-                    Text("Exercise:")
-                        .fontWeight(.bold)
-                        .foregroundColor(.orange)
-                        .position(x: 115, y: 170)
-                    TextField("Enter", text:$exercise)
-                        .font(.system(size: 20, weight: .semibold))
-                        .frame(width: 200.0, height: 20.0)
-                        .foregroundColor(Color(.black))
-                        .padding(.top, 5)
-                        .background(/*@START_MENU_TOKEN@*//*@PLACEHOLDER=View@*/Color.gray/*@END_MENU_TOKEN@*/)
-                        .position(x: 260, y: 170)
-                    Text("Weight:")
-                        .fontWeight(.bold)
-                        .foregroundColor(.orange)
-                        .position(x: 120, y: 220)
-                    TextField("Enter", text:$weight)
-                        .font(.system(size: 20, weight: .semibold))
-                        .frame(width: 160.0, height: 20.0)
-                        .foregroundColor(Color(.black))
-                        .padding(.top, 5)
-                        .background(/*@START_MENU_TOKEN@*//*@PLACEHOLDER=View@*/Color.gray/*@END_MENU_TOKEN@*/)
-                        .position(x: 240, y: 220)
-                        .keyboardType(/*@START_MENU_TOKEN@*/.decimalPad/*@END_MENU_TOKEN@*/)
+        Form{
+            Section{
+                TextField("Exercise Name", text: $exercise)
+                TextField("Type", text: $type)
+                VStack{
+                
+                    Text("Weight: \(Int(weight))")
+
+                    Slider(value: $weight, in: 0...1000, step: 5)
                         
-                    Text("Sets:")
-                        .fontWeight(.bold)
-                        .foregroundColor(.orange)
-                        .position(x: 130, y: 270)
-                        
-                    TextField("Enter", text:$set)
-                        .font(.system(size: 20, weight: .semibold))
-                        .frame(width: 160.0, height: 20.0)
-                        .foregroundColor(Color(.black))
-                        .padding(.top, 5)
-                        .background(/*@START_MENU_TOKEN@*//*@PLACEHOLDER=View@*/Color.gray/*@END_MENU_TOKEN@*/)
-                        .position(x: 240, y: 270)
-                        .keyboardType(/*@START_MENU_TOKEN@*/.decimalPad/*@END_MENU_TOKEN@*/)
-                    Text("Reps:")
-                        .fontWeight(.bold)
-                        .foregroundColor(.orange)
-                        .position(x: 130, y: 320)
-                    TextField("Enter", text:$reps)
-                        .font(.system(size: 20, weight: .semibold))
-                        .frame(width: 160.0, height: 20.0)
-                        .foregroundColor(Color(.black))
-                        .padding(.top, 5)
-                        .background(/*@START_MENU_TOKEN@*//*@PLACEHOLDER=View@*/Color.gray/*@END_MENU_TOKEN@*/)
-                        .position(x: 240, y: 320)
-                        .keyboardType(/*@START_MENU_TOKEN@*/.decimalPad/*@END_MENU_TOKEN@*/)
+                    Text("Sets:\(Int(set))")
+                    Slider(value: $set, in: 0...20, step: 1)
+                    
+                    Text("Reps: \(Int(reps))")
+                    Slider(value: $reps, in: 0...20, step: 1)
+                    
+                }
+                .padding()
+                
+                HStack{
+                    Spacer()
+                    Button("Save"){
+                        DataController().addExercise(name: exercise, weight: weight, sets: set, reps: reps, type: type, context: managedObjContext)
+                        dismiss()
+                    }
+                    Spacer()
+                }
+            }
                     
                     
                        
                }
-            )
-            .overlay(
-                Group{
-                    Text("Type:")
-                        .fontWeight(.bold)
-                        .foregroundColor(.orange)
-                        .position(x: 130, y: 370)
-                    TextField("Enter", text:$type)
-                        .font(.system(size: 20, weight: .semibold))
-                        .frame(width: 160.0, height: 20.0)
-                        .foregroundColor(Color(.black))
-                        .padding(.top, 5)
-                        .background(/*@START_MENU_TOKEN@*//*@PLACEHOLDER=View@*/Color.gray/*@END_MENU_TOKEN@*/)
-                        .position(x: 240, y: 370)
-
-                   
-                    Text("Save")
-                        .font(.system(size:14, weight: .bold))
-                        .foregroundColor(.black)
-                        .padding()
-                        .background(Color.orange)
-                        .position(x: 220, y: 500)
-                                        
-
-                
-                    
-                
-                    
-                }
-                )
+        
         
             
           }
