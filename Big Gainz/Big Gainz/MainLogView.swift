@@ -50,12 +50,12 @@ struct MainLog: View {
                 
                 NavigationLink(destination: SideMenuView()){
                     Text("Try New Workouts")
-                        .font(.title)
+                        .font(.system(size:20))
                         .padding()
                         .background(Color.orange)
                         .cornerRadius(40)
                         .foregroundColor(.white)
-                        .position(x:225, y:50)
+                        .position(x:195, y:250)
                         
                   
                   

@@ -11,13 +11,11 @@ struct SideMenuView: View {
     
     var body: some View {
             VStack {
-                Text("Workouts")
+                Text("WORKOUTS")
                     .font(.system(size: 40))
-                    .position(x: 178, y: 20)
+                    .frame(width: 400, height: 50)
                     .foregroundColor(.white)
-                    .padding()
-                    
-
+                
                 NavigationLink(destination: ChestWorkoutView()){
                     Text("Chest")
                         .font(.system(size: 28))
@@ -29,6 +27,9 @@ struct SideMenuView: View {
                 NavigationLink(destination: BackWorkoutView()){
                     Text("Back")
                         .font(.system(size: 28))
+                        .foregroundColor(.orange)
+                        .padding()
+                        .frame(width: 150)
                        
                         
                 }
@@ -36,16 +37,26 @@ struct SideMenuView: View {
                 NavigationLink(destination: ArmWorkoutView()){
                     Text("Arms")
                         .font(.system(size: 28))
+                        .foregroundColor(.orange)
+                        .padding()
+                        .frame(width: 150)
                         
                 }
                 
                 NavigationLink(destination: LegWorkoutView()){
                     Text("Legs")
                         .font(.system(size: 28))
+                        .foregroundColor(.orange)
+                        .padding()
+                        .frame(width: 150)
                         
                 }
+                
             }
+            .frame(width: 400.0, height: 900.0)
             .background(.black)
+           
+            
     }
 }
 
