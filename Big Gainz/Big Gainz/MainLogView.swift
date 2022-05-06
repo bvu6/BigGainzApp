@@ -47,6 +47,16 @@ struct MainLog: View {
                     .onDelete(perform: deleteExercise)
                 }
                 .listStyle(.plain)
+                
+                NavigationLink(destination: SideMenuView()){
+                    Image(systemName: "text.justify")
+                        .font(.title)
+                        .foregroundColor(.orange)
+                        .position(x: 225, y: 35)
+                        
+                  
+                  
+                }
             }
             .toolbar{
                 ToolbarItem (placement: .navigationBarTrailing) {
@@ -71,13 +81,7 @@ struct MainLog: View {
           .navigationTitle("Workout Log")
           .navigationBarTitleDisplayMode(.inline)
     
-            NavigationLink(destination: SideMenuView()){
-                Image(systemName: "text.justify")
-                    .font(.title)
-                    .foregroundColor(.orange)
-              
-              
-            }
+
           
         
       }

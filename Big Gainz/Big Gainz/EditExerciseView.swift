@@ -23,7 +23,7 @@ struct EditExerciseView: View {
         Form{
             Section{
                 TextField("(\(exercise.name!)", text: $name)
-                TextField("\(exercise.type!)", text: $type)
+               
                     .onAppear{
                         name = exercise.name!
                         weight = exercise.weight
